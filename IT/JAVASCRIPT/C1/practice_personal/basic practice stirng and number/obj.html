@@ -1,0 +1,36 @@
+<script>
+    let array = ['orange','apple','pineapple','coconut','potato']
+
+    let max = array[0].length;
+    let result = array[0];
+    for (let i =0 ; i<array.length; i++){
+        if (max < array[i].length){
+            max = array[i].length
+            result = array[i]
+        }
+    }
+    console.log(result)
+
+
+    // for (let value in array){
+    //     console.log(array[value])
+    // }
+
+    // let newarr = [];
+    // for (let i =0 ;i<array.length; i++){
+    //     newarr.push(array[i].length)
+    // }
+    // console.log(newarr)
+    
+
+
+</script>
+
+
+1. display lenght of array
+2. display value of array one by one
+3. display lenght of value one by one in new array
+	expect result : [6,5,9,7,6]
+
+4. display the word that have lenght bigger than other word.
+	expect result : pineapple

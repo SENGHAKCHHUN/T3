@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+    <script>
+        document.addEventListener('click', function(){
+            let array = ["orange", "apple","banana","mango","pineApple","papaya"];
+            let h1 = document.getElementById('h1');
+            let index = Math.floor(Math.random()* array.length);
+            h1.innerHTML = array[index];
+            h1.style.textAlign = 'center';
+            h1.style.fontSize = '200px';
+            h1.style.color = 'orange'
+            let body = document.querySelector('body');
+            body.appendChild(h1)
+            h1 = ""
+        })
+    </script>
+</body>
+</html>

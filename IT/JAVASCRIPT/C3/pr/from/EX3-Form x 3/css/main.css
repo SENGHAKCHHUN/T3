@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fdfafa;
+}
+
+.container {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 50px;
+  justify-content: space-evenly;
+}
+input {
+  transform: scale(1.5);
+  margin-right: 10px;
+  margin-left: 10px;
+  accent-color: red;
+}
+.content {
+  width: 50%;
+  margin: 0 auto;
+
+  margin-top: 100px;
+}
+.card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  margin-bottom: 20px;
+  padding: 16px;
+  border-radius: 10px;
+
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}

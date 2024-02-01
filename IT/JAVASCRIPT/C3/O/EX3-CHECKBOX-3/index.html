@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery Filter</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="checkbox-box">
+      <input type="checkbox" class="category" value="Nature" id="cnature" />
+      <label for="cnature">Nature</label>
+
+      <input type="checkbox" class="category" value="Architecture" id="carchitecture" />
+      <label for="carchitecture">Architecture</label>
+
+      <input type="checkbox" class="category" value="Animals" id="canimals" />
+      <label for="canimals">Animals</label>
+    </div>
+
+  </div>
+  <div class="content">
+    <div class="image" data-categories="Nature">
+      <img src="nature1.jpg" alt="Nature Image" width="40%">
+    </div>
+    <div class="image" data-categories="Architecture">
+      <img src="architecture1.jpg" alt="Architecture Image" width ='40%'>
+    </div>
+    <div class="image" data-categories="Animals">
+      <img src="animal1.jpg" alt="Animal Image" width="40%">
+    </div>
+    <!-- Add more images with appropriate categories -->
+  </div>
+</body>
+
+</html>

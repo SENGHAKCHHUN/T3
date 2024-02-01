@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 25px;
+        }
+        button{
+            font-size: 25px;
+            background: rgb(255, 201, 201);
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" value="Male" name="sex" checked >Male
+    <input type="radio" value="Famle" name="sex">Famle
+    <input type="radio" value="other" name="sex">Other
+    <button id="ok">simmit</button>
+    <p id="getValue"></p>
+    <script>
+        function apply(){
+            let result = '';
+            let list = document.getElementsByName('sex');
+            console.log(list)
+            for (let choice of list){
+                if (choice.checked){
+                    result = choice.value   
+                }
+            }
+            document.getElementById('getValue').textContent = result
+        }
+        document.getElementById("ok").addEventListener('click',apply)
+    </script>
+
+</body>
+</html>

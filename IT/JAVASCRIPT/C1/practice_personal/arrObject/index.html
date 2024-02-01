@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let car = {
+        //     model: '570',
+        //     color : 'white',
+        //     brand: 'toyata'
+        // };
+        // delete car.color;
+        // car.price = '450';
+        // car["serice"] = 'top car';
+        // for (value in car ){
+        //     console.log(car[value])
+        // }
+        // let students = {
+        //     generation: {
+        //         year: 2012,
+        //         marjor:{
+        //             mobile: {
+        //                 teacher: 'rady',
+        //                 coach: 'Ronan'
+        //             },
+        //             web:{
+        //                 teacher : 'him',
+        //                 coach : 'clement'
+        //             }
+        //         },
+        //         school : 'Pnc'
+        //     }
+        // }
+        // console.log(students.generation.marjor)
+
+        // let code = {
+            // name: 'rady',
+            // age : '100',
+    //     }
+    //     code.position = 'trainer';
+    //     code['subject'] = 'Js';
+    //     console.log(code);
+
+    //     function sum(x,y) {
+    //         return x + y
+    //     };
+    //     console.log(sum(100,1));
+
+    // let sumNumber = (x,y)=> x * y;
+    // console.log(sumNumber(10, 20))
+
+    // let cut = (x,y)=>{
+    //     return x - y;
+    // }
+    // console.log(cut(100,99))
+
+        // let square = (n) => {
+        //     return n * n;
+        // }
+        // let arr = [1,2,3,4];
+        // for (let index in arr){
+        //     arr[index] = square(arr[index]);
+        // }
+        // console.log(arr)
+
+        
+        let square = (n) => {
+            return n - 1;
+        }
+        let arr = [1,2,3,4];
+        for (let index in arr){
+            arr[index] = square(arr[index]) * square(arr[index]);
+        }
+        console.log(arr)
+
+        let students = [
+            {name : 'bora', age : 18, provice: "pp"},
+            {name : 'dara', age : 25, provice: 'kpt'},
+            {name : 'roth', age : 40, provice: 'vi'}
+        ]
+        let x = students[0]['age'];
+        for (let student in students){
+            if (x > student['age']) {
+                x = student['age'];
+            }
+        }
+        console.log(x);
+    </script>
+</body>
+</html>

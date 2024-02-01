@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html onmousemove="moveBox(event)">
+  <head>
+    <title>A Function to Move a Box</title>
+    <style type="text/css">
+      div.box {
+        width: 40px;
+        height: 40px;
+        background: #038;
+        position: absolute;
+        border-radius: 50%;
+        top: -100px;
+        left: -100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>A Function to Move a Box</h2>
+    <hr />
+    <div class="box" id="box"></div>
+
+    <script>
+      function moveBox(event) {
+        // TODO 
+        let box = document.getElementById("box")
+        box.style.top = event.clientY+'px'
+        box.style.left = event.clientX+'px'
+        console.log(event.clientX)
+        console.log(event.clientX)
+
+      }
+
+      document.documentElement.addEventListener("mousemove", moveBox);
+    </script>
+  </body>
+</html>

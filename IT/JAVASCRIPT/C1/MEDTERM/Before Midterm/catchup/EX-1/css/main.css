@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+nav {
+    background: #000;
+}
+ul {
+    display: flex;
+}
+ul li {
+    padding: 20px;
+}
+ul li a {
+    color: #fff;
+}
+.container {
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+}
+button {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border:none;
+    cursor: pointer;
+    background: orange;
+    border-radius: 40px;
+    color: #fff;
+}
+.result {
+    padding: 10px;
+    border:1px solid red;
+    margin-top: 10px;
+}

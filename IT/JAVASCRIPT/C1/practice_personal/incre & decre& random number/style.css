@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#result, #number{
+    text-align: center;
+    font-size: 100px;
+    
+}
+#increment,#reset,#decrement,#random
+{
+    background: rgb(224, 64, 168);
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 20px;
+    margin: 10px;
+    user-select: none;
+}
+.random{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin: 100px;
+}

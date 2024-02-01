@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="inputForm">
+        <input type="text" id="inputTasks" placeholder="Name">
+        <select name="select" id="option">
+            <option value="0">importance</option>
+            <option value="1">Normal</option>
+        </select>
+        <button id="btn">Create</button>
+    </div>
+
+    <div id="tasks"></div>
+
+    <script>
+        let taskForm = document.getElementById('tasks');
+        let btn = document.getElementById('btn');
+        let allTasks = [];
+
+        function save() {
+            localStorage.setItem("allTasks", JSON.stringify(allTasks));
+        }
+
+        function loadData() {
+            let data = localStorage.getItem("allTasks");
+            // if (data) {
+            //     allTasks = JSON.parse(data);
+            //     saveTask();
+            // }
+            return data
+        }
+
+        function addTask() {
+            let inputName = document.querySelector("#inputTasks").value;
+            let choice = document.querySelector("#option").value;
+            let form = { name: inputName, position: choice };
+            allTasks.push(form);
+            // saveTask();
+            save();
+        }
+        function saveTask() {
+            taskForm.innerHTML = "";
+            allTasks = JSON.parse(loadData());
+            for (let value of allTasks) {
+                let div = document.createElement('div');
+                let h1 = document.createElement('h1');
+                if (value.position == '0') {
+                    div.style.background = 'red';
+                } else {
+                    div.style.background = 'pink';
+                }
+                h1.textContent = value.name;
+                div.appendChild(h1);
+                taskForm.appendChild(div);
+            }
+        }
+
+        btn.addEventListener('click', addTask);
+        loadData();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+* {
+    font-family: cursive;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.box-shadow {
+    box-shadow: 0px 5px 12px 0px rgba(173, 173, 173, 0.75);
+    -webkit-box-shadow: 0px 5px 12px 0px rgba(173, 173, 173, 0.75);
+    -moz-box-shadow: 0px 5px 12px 0px rgba(173, 173, 173, 0.75);
+}
+
+
+.addStudent-btn {
+    align-self: start;
+}
+
+.btn {
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+}
+
+.teal {
+    background: teal;
+}
+
+.warning {
+    background: orange;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.container {
+    width: 80%;
+    margin-top: 20px;
+}
+
+/* form  */
+form {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding: 20px;
+
+}
+
+form h2 {
+    align-self: center;
+    margin: 0px 0px 10px 0px;
+}
+
+form input,
+form select,
+form textarea,
+form button {
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+form input[type="radio"] {
+    margin: 0;
+}
+
+form div {
+    display: flex;
+    justify-content: space-around;
+}
+.form-btn{
+    align-self: center;
+    width: 50%;
+}
+.form-btn button{
+    margin: 0;
+}
+
+/* end form */
+
+/* card */
+.card {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.card-profile,
+.card-btn {
+    flex: 1;
+}
+
+.card-info {
+    flex: 4.5;
+}
+
+.card-profile img,
+.card-alert-profile img {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.card-info h2,
+.card-info h4,
+.card-info span,
+.card-info p,
+.card-alert-profile h2,
+.card-alert-profile h4,
+.card-alert-btn p {
+    margin: 10px;
+}
+
+
+.card-btn {
+    padding: 10px;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+.card-btn button{
+    margin:0px 10px;
+}
+
+.card-alert {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+
+.card-alert-header img {
+    width: 50px;
+}
+
+.card-alert hr {
+    margin: 10px;
+}
+
+.card-alert-header,
+.card-alert-profile,.card-alert-btn {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    align-items: center;
+}
+/* end card  */

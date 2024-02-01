@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Remove</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="studentsTableBody">
+          <!-- Table rows will be added dynamically here -->
+        </tbody>
+      </table>
+    </div>
+
+    <div id="studentCard" class="card" style="display: none">
+      <h2>Student Details</h2>
+      <p><strong>ID:</strong> <span id="cardId"></span></p>
+      <p><strong>Name:</strong> <span id="cardName"></span></p>
+      <p><strong>Email:</strong> <span id="cardEmail"></span></p>
+      <p><strong>Phone:</strong> <span id="cardPhone"></span></p>
+    </div>
+  </body>
+</html>

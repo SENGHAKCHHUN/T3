@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <form action="index.html">
+        <img src="profile.png">
+        <input type="file">
+        <h1>Hello</h1>
+    </form>
+    <script>
+        const image = document.querySelector('img'),
+        input = document.querySelector('input');
+        input.addEventListener('change', function(){
+            console.log(input.files[0])
+            image.src = URL.createObjectURL(input.files[0])
+        })
+    </script>
+</body>
+</html>

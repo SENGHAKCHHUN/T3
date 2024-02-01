@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="task">
+        <div class="task">
+            <label for="add">Task:</label>
+            <input type="text" name="task" placeholder="Task" id="task">
+        </div>
+        <div class="task">
+            <label for="add">Tag:</label>
+            <select name="task" id="option">
+                <option value="1" selected>Important</option>
+                <option value="0">Not Important</option>
+            </select>
+        </div>
+        <button id="summit" type="button">Add Task</button>
+    </form>
+    <div id="container">
+    </div>
+    <script src="main.js" defer></script>
+</body>
+
+</html>

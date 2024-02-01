@@ -1,0 +1,15 @@
+1. Add new product(10pts)
+2. Remove product(5pts)
+4. Search (5pts)
+5. Display product detail (15pts)
+7. Filter By Categories(10pts)
+
+
+11. show best product(15pts)
+12. display low.stock products (15pts)
+13. Income const(15pts)
+3. Update product (10pts)
+6. Add product to card (10pts)
+8. Calculate Price(15pts)
+9. Sell progress of each products (15pts)
+10. Create Invoice (15pts)

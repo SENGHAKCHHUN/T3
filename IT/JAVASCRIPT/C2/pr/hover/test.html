@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo">Hello social affair</h1>
+    <script>
+        function mouseOver(){
+            document.getElementById('demo').style.color = 'red';
+            //or
+            // text.style.color = 'red'
+            text.removeEventListener('mouseover',mouseOver)
+        }
+        function mouseOut(){
+            document.getElementById('demo').style.color = 'black'
+            //or
+            // text.style.color = 'black'
+        }
+        let text = document.getElementById('demo');
+        text.addEventListener('mouseover',mouseOver);
+        text.addEventListener('mouseout',mouseOut)
+        
+    </script>
+</body>
+</html>

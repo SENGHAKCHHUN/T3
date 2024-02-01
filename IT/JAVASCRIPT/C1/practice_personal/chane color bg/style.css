@@ -1,0 +1,51 @@
+button {
+    padding: 10px;
+    background: black;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+}
+#btnRed{
+    background: red;
+    border: none;
+}
+
+#btnGreen{
+    background: green;
+    border: none;
+}
+
+#btnTeal{
+    background: Teal;
+    border: none;
+}
+
+#btnOrange{
+    background: orange;
+    border: none;
+}
+#btnPurple{
+    background: purple;
+    border: none;
+}
+#btnPink{
+    background: pink;
+    border: none;
+}
+#btnBlue{
+    background: blue;
+    border: none;
+}
+#btnYellow{
+    background: yellow;
+    border: none;
+}
+#btnGray{
+    background: gray;
+    border: none;
+}
+#btnWhite{
+    background: rgba(233, 244, 191, 0.854);
+    border: none;
+    color: black;
+}

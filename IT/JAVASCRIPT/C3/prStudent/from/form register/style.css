@@ -1,0 +1,56 @@
+body{
+    padding: 0px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background: gray;
+}
+form{
+    background: rgb(255, 225, 76);
+    border-radius: 15px 0px;
+    font-size: 18px;
+    width: 25%;
+    box-shadow:0px 2px 0px;
+}
+form h1{
+    text-align: center;
+    color: white;
+}
+.username{
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+}
+.username div{
+    display: flex;
+    padding: 0px;
+}
+.username div input{
+    width: 94%;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+form div input,button{
+    padding: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 0px 3px 0px;
+    border-radius: 5px;
+    width: 98%;
+    height: 20px;
+}
+form button{
+    background: gray;
+    margin: 10px;
+    width: 95%;
+    height: 30px;
+    color: white;
+    font-size: 20px;   
+}
+body button{
+    width: 200px;
+    margin-top: 10px;
+}

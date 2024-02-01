@@ -1,0 +1,24 @@
+Practice Linux Command Lines 
+============================
+
+Preparation before practice command line:
+- Install VirtualBox on computer 
+- Download file ISO Ubuntu Server 22.04TLS
+- Install Ubuntu Server on VirtualBox 
+- Explore how to use VirtualBox 
+
+==========================================
+
+Practice command line:
+
+1. Use a command line to create a directory name "Quiz".
+2. Create 5 files name quiz1.txt - quiz5.txt inside directory "Quiz". 
+3. Display calendar of 2023 and 2024.
+4. Create another directory name "Homework". 
+5. Create a text file name myhomework.txt under directory "Homework" with sentence 
+   "This is system administration".
+6. Use command to open file myhomework.txt
+7. Delete directory "Homework" and everything inside it. 
+
+
+
