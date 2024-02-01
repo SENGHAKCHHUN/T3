@@ -1,0 +1,10 @@
+
+array = ['orange','apple','pineapple','coconut','potato']
+
+1. display lenght of array
+2. display value of array one by one
+3. display lenght of value one by one in new array
+	expect result : [6,5,9,7,6]
+
+4. display the word that have lenght bigger than other word.
+	expect result : pineapple

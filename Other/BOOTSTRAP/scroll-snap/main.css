@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background: #342f2f;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 800px;
+    border: 20px solid rgb(83, 82, 79);
+    border-radius: 20px;
+}
+.point{
+    min-width: 100%;
+    scroll-snap-align: center   ;
+}
+.point >img{
+    width: 100%;
+}

@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #222222;
+}
+
+.container {
+  width: 800px;
+  display: flex;
+  border-radius: 20px;
+  border: 20px solid #404040;
+  overflow: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.poster {
+  min-width: 100%;
+  scroll-snap-align: center;
+}
+
+.poster>img {
+  width: 100%;
+}
