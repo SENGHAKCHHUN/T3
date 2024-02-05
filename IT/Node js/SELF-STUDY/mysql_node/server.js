@@ -19,6 +19,9 @@ app.get('/users', (req, res) => {
         res.send(result)
     })
 })
+
+
+
 app.get('/users/:id', (req, res) => {
     let id = req.params.id;
     let sql = 'select * from students where id=?';
