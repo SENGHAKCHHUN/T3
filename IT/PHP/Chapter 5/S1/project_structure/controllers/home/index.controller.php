@@ -2,4 +2,4 @@
 
 $heading = "Home Page";
 
-require "views/home/index.view.php";
+require_once("views/home/index.view.php");

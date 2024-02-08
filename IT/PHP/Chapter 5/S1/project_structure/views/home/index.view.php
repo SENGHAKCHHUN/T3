@@ -1,6 +1,6 @@
-<?php require "../partials/head.php" ?>
-<?php require "../partials/nav.php" ?>
-<?php require "../partials/banner.php" ?>
+<?php require_once("./views/partials/head.php") ?>
+<?php require_once("./views/partials/nav.php") ?>
+<?php require_once("./views/partials/banner.php") ?>
 
 
   <main>
