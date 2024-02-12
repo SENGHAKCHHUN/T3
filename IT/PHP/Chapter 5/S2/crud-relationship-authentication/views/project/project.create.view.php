@@ -28,7 +28,7 @@ $posts = getPosts();
                 <select class="form-control" id="sel1" name="post_id">
                     <option>Chose Post</option>
                     <?php foreach ($posts as $post) : ?>
-                        <option value="<?= $post['id'] ?>"><?= $post['title'] ?></option>
+                    <option value="<?= $post['id'] ?>"><?= $post['title'] ?></option>
                     <?php endforeach ?>
                 </select>
             </div>

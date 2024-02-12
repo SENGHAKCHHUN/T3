@@ -1,12 +1,12 @@
 <?php
 session_start();
 require "database/database.php";
-
+print_r($_SESSION);
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = $_POST["email"];
     $password = $_POST["password"];
-
+    
     // Query the database to check user credentials
     $stmt = $connection->prepare("SELECT id, email, password,phone FROM users WHERE email = :email");
     $stmt->execute([':email'=>$email]);

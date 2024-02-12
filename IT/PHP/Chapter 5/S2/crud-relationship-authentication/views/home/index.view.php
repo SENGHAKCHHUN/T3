@@ -13,12 +13,12 @@ if (!isset($_SESSION['user_id'])) {
 <?php require "views/partials/banner.php" ?>
 
 
-  <main>
+<main>
     <div class="p-3">
-      <!-- Replace with your content -->
-     <p>Hello Home</p>
-      <!-- /End replace -->
+        <!-- Replace with your content -->
+        <p>Hello Home</p>
+        <!-- /End replace -->
     </div>
-  </main>
-  
+</main>
+
 <?php require "views/partials/footer.php" ?>
