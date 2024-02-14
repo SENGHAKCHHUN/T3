@@ -73,21 +73,7 @@ $datas = $statment->fetchAll();
                 month: 'Month',
                 list: 'List',
             },
-            events: [
-                <?php
-                foreach ($datas as $data) {
-                    print_r($data);
-                ?> {
-                        title: '<?= $data[1] ?>',
-                        start: '<?= $data[2]?>',
-                        end: '<?= $data[3] ?>',
-                        color: 'orange',
-                        textColor: 'white',
-                    },
-                <?php
-                };
-                ?>
-            ],
+            
             dayRender: function(date, cell) {
                 var today = $.fullCalendar.moment();
                 if (date.get('date') == today.get('date')) {
