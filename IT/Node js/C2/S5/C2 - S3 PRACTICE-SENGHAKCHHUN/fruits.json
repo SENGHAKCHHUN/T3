@@ -1,1 +1,17 @@
-[{"name":"banana","fruitColor":"yellow","fruitPrice":12},{"name":"apple","fruitColor":"red","fruitPrice":20},{"name":"mango","fruitColor":"green","fruitPrice":20}]
+[
+    {
+        "name": "banana",
+        "fruitColor": "yellow",
+        "fruitPrice": 12
+    },
+    {
+        "name": "apple",
+        "fruitColor": "red",
+        "fruitPrice": 20
+    },
+    {
+        "name": "mango",
+        "fruitColor": "green",
+        "fruitPrice": 20
+    }
+]

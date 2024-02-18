@@ -1,5 +1,12 @@
-
-
+<?php
+  if (isset($_SESSION['success'])){
+    echo $_SESSION['success'];
+  }
+?>
+<div class="alert alert-success alert-dismissible">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+  </div>
 <div class="card">
   <div class="card-body">
     <form action="controllers/signin/check_signin.controller.php" method="post">

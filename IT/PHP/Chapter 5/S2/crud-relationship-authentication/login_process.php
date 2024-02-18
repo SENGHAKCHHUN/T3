@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $password = $_POST["password"];
 
     // Query the database to check user credentials
-    $stmt = $connection->prepare("SELECT id, email, password,phone FROM users WHERE email = :email");
+    $stmt = $connection->prepare("SELECT * FROM users WHERE email = :email");
     $stmt->execute([':email'=>$email]);
     $user = $stmt->fetch();
     

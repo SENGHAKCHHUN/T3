@@ -10,3 +10,16 @@ function  createUser($name, $password, $email): bool
     ]);
     return $user->rowCount() > 0;
 }
+
+function accountExist(string $email): array{
+    global $connection;
+    $statement = $connection->prepare("SELECT * FROM users where email =:email");
+    $statement->execute([
+        ':email' => $email
+    ]);
+    if ($statement->rowCount() > 0) {
+        return $statement->fetch();
+    }else{
+        return [];
+    }
+}

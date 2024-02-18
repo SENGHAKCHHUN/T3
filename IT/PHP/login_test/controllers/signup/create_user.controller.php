@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require "../../database/database.php";
     require "../../models/user.model.php";
     if ($_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -7,13 +8,14 @@
             $password = htmlspecialchars($_POST['password']);
             $email = htmlspecialchars($_POST['email']);
             $password_encrypt = password_hash($password, PASSWORD_BCRYPT);
-            $iscreated =  createUser($name, $password_encrypt, $email);
-            if ($iscreated){
+            $user = accountExist($email);
+            if (count($user) == 0){
+                createUser($name,  $password_encrypt, $email);
                 header("Location: /signin");
+                $_SESSION['success'] = "Account Created successfully";
             }else{
-                header("Location: /");
+                echo "Account already exists";
             }
-
         }
     }
 ?>
