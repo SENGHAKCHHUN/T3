@@ -1,0 +1,25 @@
+const express = require('express');
+const { toNamespacedPath } = require('path');
+const app = express();
+app.listen(3000, () => {
+    console.log("server is running !!!");
+});
+
+app.use(express.static('public'));
+
+let Books = [
+    { id: 1, name: "Rady dreams in 2019" },
+    { id: 2, name: "How to dream of code?" },
+    { id: 3, name: "How to kill covid" },
+];
+app.get("/Books", (req, res) => {
+    let name = '';
+    let id = req.query.id;
+    if (id < Books.length){
+        name = Books[id].name;
+        res.send("Book name : " + name)
+    }
+    else{
+        res.send(Books)
+    }
+})
