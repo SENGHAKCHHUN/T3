@@ -46,21 +46,21 @@ $datas = $statment->fetchAll();
     })
     $(document).ready(function() {
         $('#calendar').fullCalendar({
-            // dayClick: function(date, allDay, jsEvent, view) {
-            //     var formattedDate = date.toString().replace(" GMT+0000", "");
-            //     alert(formattedDate );
-            // },
+            dayClick: function(date, allDay, jsEvent, view) {
+                var formattedDate = date.toString().replace(" GMT+0000", "");
+                alert(formattedDate );
+            },
             scrollTime: '07:00:00',
             minTime: '07:00:00',
             maxTime: '18:00:00',
             defaultView: 'agendaWeek',
             hiddenDays: [0],
-            // alldayslot: false,
-            // selectable: true,
-            // selectHelper: true,
-            // select: function() {
-            //     $('#myModal').modal('toggle');
-            // },
+            alldayslot: false,
+            selectable: true,
+            selectHelper: true,
+            select: function() {
+                $('#myModal').modal('toggle');
+            },
             header: {
                 left: 'month, agendaWeek, agendaDay, list',
                 center: 'title',
@@ -73,7 +73,7 @@ $datas = $statment->fetchAll();
                 month: 'Month',
                 list: 'List',
             },
-            
+
             dayRender: function(date, cell) {
                 var today = $.fullCalendar.moment();
                 if (date.get('date') == today.get('date')) {
