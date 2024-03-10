@@ -13,9 +13,9 @@ let Books = [
 app.get("/Books", (req, res) => {
     let name = '';
     // let params = req.params.id;
-    let id = req.query.name;
+    let id = req.query.id;
     if (id < Books.length){
-        name = Books[id].id;
+        name = Books[id].name;
         res.send("Book name : " + name)
     }
     else{
